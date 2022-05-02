@@ -1,0 +1,39 @@
+<title>INFINITE SPACE</title>
+
+<style>
+    html {
+        background-color: black;
+    }
+    .c {
+        position: fixed;
+        left:0;
+        right:0;
+        width:100%;
+        height:100%;
+    }
+
+    .databox {
+        position:fixed;
+        right:0;
+        z-index:100;
+        background-color:rgba(87, 0, 0, 0.5);
+        color:orange;
+        font-family: 'Courier New', Courier, monospace;
+        width:10%;
+        top: 50%;
+        padding:5px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background-blend-mode: overlay;
+    }
+</style>
+
+<html>
+    <div class="c" id="canvas_div">
+        <canvas  id='draw_canvas'></canvas>
+    </div>
+
+    <div class="databox" id="databox"></div>
+
+    <script src="backrooms.js"></script>
+</html>

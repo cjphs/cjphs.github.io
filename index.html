@@ -1,52 +1,15 @@
-<style>
-    #main {
-        left:0;
-        display:flex;
-        margin:20px;
-        min-width:50%;
-        max-width:1000px;
-    }
-
-    #box {
-        display:inline-block;
-
-        margin-left:10px;
-        margin-right:10px;
-
-        text-align:left;
-        color:white;
-
-        min-height:200px;
-        min-width:30%;
-        width:100%;
-
-        padding:10px;
-        box-shadow: 0 0 2px;
-
-        background-color:rgb(29, 29, 29)
-    }
-
-    .project_thumb {
-        float:left; 
-        margin-right:10px;
-    }
-
-    .project_div {
-        margin-top:10px;
-        display:flex;
-    }
-
-    a:link, a:visited {
-        color:white;
-    }
-
-    html {
-        background-color: rgb(0, 0, 0);
-        font-family:'Courier New', Courier, monospace;
-    }
-</style>
+<!DOCTYPE html>
 
 <html>
+<head>
+    <title>Christopher's stuff</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://christophersch.github.io/"/>
+    <meta property="og:title" content="christophersch" />
+    <meta property="og:description" content="Programming project portfolio"/>
+</head>
 
 <body> 
 
@@ -54,14 +17,12 @@
 
     <center>
         
-        <div id="main">
-            <div id="box">
-                <h2>
+        <div class="main">
+            <div class="box">
+                <h1>
                     Christopher Schiffmann
-                </h2>
+                </h1>
                 
-                <hr>
-
                 <p>
                     Bachelor student in Data Science & Artificial Intelligence.
                 </p>
@@ -69,70 +30,115 @@
                 <p>
                     Interested in generative art & game development
                 </p>
-
-
             </div>
 
-            <div id="box" style="width:30%;">
-                <h2>
-                    Programming
-                </h2>
-
-                <hr>
-
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Lua</li>
-
+            <div id="techstack" class="box" style="width:30%; display: flex; align-items:center; justify-content: center; padding:10px">
+                <center>
+                    <p>
+                        <img src="assets/java.png"   title="Java"></img>
+                        <img src="assets/python.png" title="Python"></img>
+                        <img src="assets/js.png"     title="Javascript"></img>
+                        <img src="assets/lua.png"    title="Lua"></img>
+                        <br>
+                        <img src="assets/node.png"   title="Node.JS"></img>
+                        <img src="assets/git.png"    title="Git"></img>
+                        <img src="assets/mysql.png"  title="MySQL"></img>
+                    </p>
+                </center>
             </div>
 
             
         </div>
 
-        <div id="main">
-            <div id="box">
+        <div class="main">
+            <div class="box">
                 <h1>
                     Projects
                 </h1>
 
                 <hr>
 
+                <h2>Java</h2>
+
+                
+                <!-- <a href="https://christophersch.github.io/backrooms/"> -->
+                    <div class="project_div">
+                        <div class="project_thumb"><img src="assets/gameframework_thumbnail.png" width="100"></img></div>
+                        <div>
+                            <h3> 
+                                Poop
+                            </h3>
+                            <p>poop.</p>
+                        </div>
+                </div>
+            <!-- </a> -->
+
+                <h2>Javascript</h2>
+
+                <a href="https://christophersch.github.io/golcube/" target="_blank">
                 <div class="project_div">
                     <div class="project_thumb"><img src="assets/golcube_thumbnail.png" width="100"></img></div>
                     <div>   
-                        <h2>
-                            <a href="https://christophersch.github.io/golcube/" target="_blank">GoLCube</a>
-                        </h2>
+                        <h3>
+                            GoLCube
+                        </h3>
                         <p>A version of John Conway's Game of Life built over the surface of a cube.</p>
                     </div>
-                </div>
+                </div></a>
 
+                <a href="https://github.com/christophersch/anonventbot" target="_blank">
                 <div class="project_div">
                     <div class="project_thumb"><img src="assets/anonventbot_thumbnail.png" width="100"></img></div>
                     <div>
-                        <h2> 
-                            <a href="https://github.com/christophersch/anonventbot" target="_blank">AnonVentBot</a> 
-                        </h2>
+                        <h3> 
+                            AnonVentBot
+                        </h3>
                         <p>A Discord bot to allow anonymized messages to be sent to a specific channel, primarily used for venting about personal issues.</p>
+                    </div>
+                </div></a> 
+
+                <a href="https://christophersch.github.io/backrooms/" target="_blank">
+                <div class="project_div">
+                    <div class="project_thumb"><img src="assets/backrooms_thumbnail.png" width="100"></img></div>
+                    <div>
+                        <h3> 
+                            Backrooms
+                        </h3>
+                        <p>Code doodle based on the popular internet phenomenon of the Backrooms</p>
+                    </div>
+                </div></a> 
+
+                <h2>Misc</h3>
+
+                <div class="project_div">
+                    <div class="project_thumb"><img src="assets/gm3d_thumbnail.png" width="100"></img></div>
+                    <div>
+                        <h3> 
+                            orbSrc
+                        </h3>
+                        <p>An improved framework for 3D game development in GameMaker Studio 2</p>
                     </div>
                 </div>
                 
-                <div class="project_div">
-                    <div class="project_thumb"><img src="assets/backrooms_thumbnail.png" width="100"></img></div>
-                        <div>
-                            <h2> 
-                                <a href="https://christophersch.github.io/backrooms/" target="_blank">Backrooms</a> 
-                            </h2>
-                            <p>Code doodle based on the popular internet phenomenon of the Backrooms</p>
-                        </div>
-                    </div>
+                <br>
+                <a href="index.html">
+                <center>Other things I'm proud to showcase...</center>
+                </a>
+                <br>
                 </div>
             </div>
 
         </div>
     </center>
 </body>
+
+<footer>
+    <center> 
+        <p>
+            Last updated: 23 May 2022
+        </p>
+    </center>
+</footer>
 
 </html>
 

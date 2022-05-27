@@ -2,7 +2,6 @@
     left:0;
     display:flex;
     margin:20px;
-    min-width:50%;
     max-width:1000px;
 }
 
@@ -16,7 +15,6 @@
     color:white;
 
     min-height:100px;
-    min-width:30%;
     width:100%;
 
     padding:10px;

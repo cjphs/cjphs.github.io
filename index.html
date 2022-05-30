@@ -21,20 +21,24 @@
         
         <div class="main">
             <div class="box">
-                <h1>
-                    Christopher Schiffmann
-                </h1>
                 
-                <p>
-                    Bachelor student in Data Science & Artificial Intelligence.
-                </p>
+                <center>
+                    
+                    <h1>
+                        Christopher Schiffmann
+                    </h1>
 
-                <p>
-                    Interested in generative art & game development
-                </p>
+                    <p>
+                        Bachelor student in Data Science & Artificial Intelligence.
+                    </p>
+
+                    <p>
+                        Interested in generative art & game development
+                    </p>
+                </center>
             </div>
 
-            <div id="techstack" class="box" style="width:25%; display: flex; align-items:center; justify-content: center; padding:10px">
+            <div id="techstack" class="box" style="display: flex; align-items:center; justify-content: center; padding:10px">
                 <center>
                     <p>
                         <img src="assets/java.png"   title="Java"></img>
@@ -52,60 +56,86 @@
         </div>
 
         <div class="main">
-            <div class="box">
+            <div class="box" id="projects">
                 <h1>
                     Projects
                 </h1>
-
-                <h2>Javascript</h2>
-
-                <a href="https://christophersch.github.io/golcube/" target="_blank">
-                <div class="project_div">
-                    <div class="project_thumb"><img src="assets/golcube_thumbnail.png" width="100"></img></div>
-                    <div>   
-                        <h3>
-                            GoLCube
-                        </h3>
-                        <p>A version of John Conway's Game of Life built over the surface of a cube.</p>
-                    </div>
-                </div></a>
-
-                <a href="https://christophersch.github.io/backrooms/" target="_blank">
-                <div class="project_div">
-                    <div class="project_thumb"><img src="assets/backrooms_thumbnail.png" width="100"></img></div>
-                    <div>
-                        <h3> 
-                            Backrooms
-                        </h3>
-                        <p>Code doodle based on the popular internet phenomenon of the Backrooms</p>
-                    </div>
-                </div></a> 
-                
-                <h2>Java</h2>
-                
-                <a href="https://github.com/christophersch/GameFramework">
-                    <div class="project_div">
-                        <div class="project_thumb"><img src="assets/gameframework_thumbnail.png" width="100"></img></div>
-                        <div>
-                            <h3> 
-                              Unnamed 2D game framework  
-                            </h3>
-                            <p>Work in progress 2D game framework built on top of the Swing graphics library with a GameMaker-like project structure.</p>
-                        </div>
-                </div>
-            </a>
-<!-- 
-                <br>
-                <a href="index.html">
-                    <center>Other things I'm proud to showcase...</center>
-                </a>
-                <br> -->
-                </div>
             </div>
+
+            <!-- Dynamically add projects -->
+            <script>
+                //todo: load this from a json file instead
+                const projects = [
+                    [
+                        "GoLCube",
+                        "https://christophersch.github.io/golcube",
+                        "assets/golcube_thumbnail.png",
+                        "A version of John Conway's Game of Life built over the surface of a cube.",
+                        "Web, JavaScript"
+                    ],
+
+                    [
+                        "GameFramework",
+                        "https://github.com/christophersch/GameFramework",
+                        "assets/gameframework_thumbnail.png",
+                        "Work in progress 2D game framework built on top of the Swing graphics library with a GameMaker-like project structure.",
+                        "Java"
+                    ],
+
+                    [
+                        "Anonventbot",
+                        "https://github.com/christophersch/anonventbot",
+                        "assets/anonventbot_thumbnail.png",
+                        "A Discord bot allowing users to submit anonymized messages to a specific channel.",
+                        "JavaScript, Node.js"
+                    ],
+
+                    [
+                        "Backrooms",
+                        "https://christophersch.github.io/backrooms/",
+                        "assets/backrooms_thumbnail.png",
+                        "Code doodle based on the popular internet phenomenon of the Backrooms",
+                        "Web, JavaScript, Code Doodle"
+                    ]
+                ]
+
+                let project_div = document.getElementById("projects");
+
+
+                var i = 0;
+                projects.forEach(project => {
+
+                    s = `<a href="${project[1]}">
+                            <div class="project_div" style="animation-delay:${i++/10}s">
+                                <div class="project_thumb"><img src="${project[2]}" width="100"></img></div>
+                                <div>
+                                    <h3> 
+                                    ${project[0]}
+                                    </h3>
+                                    <p>${project[3]}</p>
+
+                                    <p class="project_div_tag"><i>${project[4]}</i></p>
+                                </div>
+                        </div></a>
+                    `
+
+                    project_div.innerHTML += s;
+
+                    console.log(s)
+
+                    console.log(project_div.innerHTML);
+                } 
+                
+                );
+            </script>       
+
+           
 
         </div>
     </center>
 </body>
+
+ 
 
 <footer>
     <center> 
@@ -116,79 +146,3 @@
 </footer>
 
 </html>
-
-<!-- <script>
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext('2d');
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    
-    ctx.strokeStyle = "#FFFFFF"
-
-    frame = 0;
-
-    class Particle {
-        x = 0;
-        y = 0;
-        ox = 0;
-        oy = 0;
-        frequency = 0;
-        shift = 0;
-        amplitude = 0;
-        speed = 3;
-
-        constructor(x,y,f,s,a) {
-            this.x = x;
-            this.y = y;
-            this.ox = x;
-            this.oy = y;
-            this.frequency = f;
-            this.shift = s;
-            this.amplitude = a;
-
-            particles.push(this);
-        }
-    }
-
-    let particles = [];
-
-    function update() {        
-        ctx.fillStyle = "#000000"
-        ctx.globalAlpha = 0.05;
-        ctx.fillRect(0,0,canvas.width,canvas.height);
-        ctx.globalAlpha = 1;
-
-        let new_particles = [];
-        particles.forEach(part => {
-            part.x += part.speed;
-            part.y += Math.sin(part.x * part.frequency + part.shift) * part.amplitude;
-
-            ctx.beginPath();
-            ctx.moveTo(part.ox, part.oy);
-            ctx.lineTo(part.x, part.y);
-            ctx.stroke();
-
-            part.ox = part.x;
-            part.oy = part.y;
-
-            if (part.x < canvas.width)
-                new_particles.push(part);
-        });
-        particles = new_particles;
-
-        if (Math.random() < 0.0) {
-            y = Math.random() * canvas.height;
-            amplitude = Math.random() * 5;
-            frequency = Math.random() * (2 + 4) - 4;
-            shift = Math.random() * 2 * Math.PI;
-
-            new Particle(0, y, frequency, shift, amplitude);
-        }
-
-        requestAnimationFrame(update)
-        
-        console.log(particles.length);
-    }
-    // update();
-</script> -->

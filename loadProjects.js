@@ -39,7 +39,7 @@ let project_div = document.getElementById("projects");
 var i = 0;
 projects.forEach(project => {
 
-    s = `<a href="${project[1]}">
+    s = `<a href="${project[1]}" target="_blank">
             <div class="project_div" style="animation-delay:${i++/10}s">
                 <div class="project_thumb"><img src="${project[2]}" width="100"></img></div>
                 <div>

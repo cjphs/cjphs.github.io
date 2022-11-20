@@ -4,33 +4,35 @@ const projects = [
         "GoLCube",
         "https://christophersch.github.io/golcube",
         "assets/golcube_thumbnail.png",
-        "A version of John Conway's Game of Life built over the surface of a cube.",
+        "A 2D cellular automata simulator built over the surface of a cube.",
         "Web, JavaScript"
     ],
+    
+    // ,
 
     [
-        "GameFramework",
+        "Infinite Maze Game",
         "https://github.com/christophersch/GameFramework",
         "assets/gameframework_thumbnail.png",
-        "Work in progress 2D game framework built on top of the Swing graphics library with a GameMaker-like project structure.",
+        "An infinite maze exploration game where the only direction is down.",
         "Java"
-    ],
-
-    [
-        "Anonventbot",
-        "https://github.com/christophersch/anonventbot",
-        "assets/anonventbot_thumbnail.png",
-        "A Discord bot allowing users to submit anonymized messages to a specific channel.",
-        "JavaScript, Node.js"
-    ],
-
-    [
-        "Backrooms",
-        "https://christophersch.github.io/backrooms/",
-        "assets/backrooms_thumbnail.png",
-        "Code doodle based on the popular internet phenomenon of the Backrooms",
-        "Web, JavaScript, Code Doodle"
     ]
+
+    // [
+    //     "Anonventbot",
+    //     "https://github.com/christophersch/anonventbot",
+    //     "assets/anonventbot_thumbnail.png",
+    //     "A Discord bot allowing users to submit anonymized messages to a specific channel.",
+    //     "JavaScript, Node.js"
+    // ],
+
+    // [
+    //     "Backrooms",
+    //     "https://christophersch.github.io/backrooms/",
+    //     "assets/backrooms_thumbnail.png",
+    //     "Code doodle based on the popular internet phenomenon of the Backrooms",
+    //     "Web, JavaScript, Code Doodle"
+    // ]
 ]
 
 let project_div = document.getElementById("projects");

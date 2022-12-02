@@ -2,7 +2,7 @@
 const projects = [
     [
         "GoLCube",
-        "https://christophersch.github.io/golcube",
+        "https://cjphs.github.io/golcube",
         "assets/golcube_thumbnail.png",
         "A 2D cellular automata simulator built over the surface of a cube.",
         "Web, JavaScript"
@@ -12,7 +12,7 @@ const projects = [
 
     [
         "Infinite Maze Game",
-        "https://github.com/christophersch/GameFramework",
+        "https://github.com/cjphs/GameFramework",
         "assets/gameframework_thumbnail.png",
         "An infinite maze exploration game where the only direction is down.",
         "Java"

@@ -4,10 +4,17 @@ const projects = [
         "GoLCube",
         "https://cjphs.github.io/golcube",
         "assets/golcube_thumbnail.png",
-        "A 2D cellular automata simulator built over the surface of a cube.",
+        "A 2D cellular automata simulator built over the surface of a 3D cube.",
         "Web, JavaScript"
     ],
     
+    [
+        "CA Script",
+        "https://christophersch.github.io/golcube",
+        "assets/ca_script_thumbnail.png",
+        "Cellular Automata sandbox with simple rule set scripting.",
+        "Web, JavaScript"
+    ],
     // ,
 
     [

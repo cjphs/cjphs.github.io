@@ -10,7 +10,7 @@ const projects = [
     
     [
         "CA Script",
-        "https://christophersch.github.io/golcube",
+        "https://cjphs.github.io/ca_script/web/",
         "assets/ca_script_thumbnail.png",
         "Cellular Automata sandbox with simple rule set scripting.",
         "Web, JavaScript"

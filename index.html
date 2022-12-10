@@ -1,79 +1,70 @@
-<!DOCTYPE html>
-
-<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    
-    <title>Christopher's stuff</title>
-    <link rel="stylesheet" href="style.css">
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cjphs.github.io/"/>
-    <meta property="og:title" content="cjphs" />
-    <meta property="og:description" content="Programming project portfolio"/>
+    <link href="style.css" rel="stylesheet">
 </head>
 
-<body> 
+<html>
+    <body>
+        <center>
+            <h1>cjphs</h1>
+            <a href="/index.html">Projects</a> &nbsp <a href="/music.html">Music</a> &nbsp <a href="/about.html">About</a>
 
-    <canvas id="canvas" style="position:absolute; left:0; top:0; z-index:-100; overflow:hidden;"></canvas>
+        </center>
+        <hr>
 
-    <center>
-        
-        <div class="main">
-            <div class="box">
-                
-                <center>
-                    
-                    <h1>
-                        Christopher Schiffmann
-                    </h1>
-                    
-                    <p>
-                        <a href="https://github.com/cjphs/" target="_blank">Github</a> | 
-                        <a href="https://www.linkedin.com/in/christopher-schiffmann-640196215/" target="_blank">LinkedIn</a>
-                    </p>
-                </center>
+        <div class="project">
+            <div class="thumb">
+                <img src="/assets/project_thumbnails/golcube_thumbnail.png"></img>
+            </div>
+            <div class="desc"> 
+                <b>GoLCube</b>
+                <p>
+                    2D cellular automata simulator built over the surface of a cube.
+                </p>
 
-                <!-- <div id="techstack">
-                    <center>
-                        <p>
-                            <img src="assets/techstack/java.png"   title="Java"/>
-                            <img src="assets/techstack/python.png" title="Python"/>
-                            <img src="assets/techstack/js.png"     title="Javascript"/>
-                            <img src="assets/techstack/lua.png"    title="Lua"/>
-                            <img src="assets/techstack/node.png"   title="Node.JS"/>
-                            <img src="assets/techstack/git.png"    title="Git"/>
-                            <img src="assets/techstack/mysql.png"  title="MySQL"/>
-                        </p>
-                    </center>
-                </div> -->
+                <p><a href="https://cjphs.github.io/golcube/">Web</a></p>
             </div>
         </div>
 
-        <div class="main">
-            <div class="box" id="projects">
-                <h1>
-                    Projects
-                </h1>
+        <div class="project">
+            <div class="thumb">
+                <img src="/assets/project_thumbnails/ca_script_thumbnail.png"></img>
+            </div>
+            <div class="desc"> 
+                <b>CA Script</b>
+                <p>
+                    Cellular automata sandbox with simple ruleset scripting
+                </p>
 
-                
-                <!-- Dynamically add projects -->
-                <script src="loadProjects.js"></script>
-
-                <br>
+                <p>
+                    <a href="https://cjphs.github.io/ca_script/web/">Web</a>
+                </p>
             </div>
         </div>
-    </center>
-</body>
 
- 
 
-<footer>
-    <center> 
-        <p>
-            Last updated: 12 December 2022
-        </p>
-    </center>
-</footer>
+        <div class="project">
+            <div class="thumb">
+                <img src="/assets/project_thumbnails/gameframework_thumbnail.png"></img>
+            </div>
+            <div class="desc"> 
+                <b>Maze Game</b>
 
+                <p>
+                    Infinite maze platformer game. Made in conjunction with a Swing-based 2D game engine.
+                </p>
+
+                <p><a href="">Github repo</a>, <a href="">Youtube video</a></p>
+            </div>
+        </div>
+
+
+        <hr>
+                
+        <img src="/assets/twitter.svg" style="height:15px"></img> <a href="https://twitter.com/_cjphs/">@_cjphs</a> <br>
+        <img src="/assets/github.svg" style="height:15px"></img> <a href="https://github.com/cjphs">cjphs</a>
+
+    </body>
 </html>
+
+<!-- 
+                 -->

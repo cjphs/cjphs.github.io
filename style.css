@@ -1,118 +1,72 @@
-.main {
-    left:0;
-    display:flex;
-    margin:20px;
-    max-width:1000px;
-}
-
-.box {
-    display:inline-block;
-
-    margin-left:10px;
-    margin-right:10px;
-
-    text-align:left;
-    color:white;
-
-    min-height:100px;
-    width:100%;
-
-    padding:10px;
-    box-shadow: 0 0 2px;
-
-    background-color:rgb(29, 29, 29)
-}
-
-p {
-    color: white;
-    max-width:1000px;
-}
-
-.project_thumb {
-    float:left; 
-    margin-right:10px;
-    border-radius: 10px;
-}
-
-.project_thumb img {
-    border-radius: 50%;
-    box-shadow: 0 0 4px;
-    color:black;
-}
-
-.project_div {
-    margin-top:10px;
-    padding:4px;
-    display:flex;
-    align-items:center;
-    border-radius: 10px;
-    transition: background-color 0.05s;
-    opacity: 0;
-    animation-fill-mode: both;
-    animation-duration: 0.25s;
-    animation-name: fadein;
-}
-
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-
-    to {
-        opacity:1;
-    }
-}
-
-.project_div_tag {
-    color:grey;
-}
-
-.project_div:hover {
-    background-color: rgb(46, 50, 87);
-    transition: background-color 0.05s;
-}
-
-#techstack {
-    width:100%;
-    display: inline-block;
-    align-items:center;
-    height:100px;
-}
-
-#techstack img {
-    min-width:20px;
-    max-width:50px;
-    object-fit: cover;
-
-    bottom:0%;
-    
-    transition: 0.1s;
-
-    position: relative;
-    display: inline-block;
-
-    border-radius:50%;
-}
-
-#techstack img:hover {
-    bottom:10%;
-    border-radius:10%;
-
-    transition: 0.1s;
-}
-
-
-a:link, a:visited {
-    color:rgb(0, 208, 255);
-    text-decoration: none;
+@font-face {
+  font-family: OpenSans;
+  src: url("assets/OpenSans-Regular.ttf");
 }
 
 html {
-    background-color: rgb(0, 0, 0);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+    font-family: OpenSans;
+    text-align: justify;
+
+    background-image: url("/assets/bg-ca.png");
 }
 
-h1, h2 {
-    text-align: center;
-    color:white;
+body {
+    background-color: rgb(241, 241, 241);
+    color: rgb(5, 0, 0);
+    
+    margin-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 80%;
+
+    min-height: 100px;
+
+    padding: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_content {
+    padding-right: 15px;
+}
+
+.project {
+    width: 100%;
+    overflow: auto;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.project .thumb {
+    display: inline-block;
+    width: 20%;
+    max-width: 125px;
+    vertical-align: top;
+    border: double;
+}
+
+.thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project .desc {
+    display: inline-block;
+    margin-left: 20px;
+    width: 70%;
 }

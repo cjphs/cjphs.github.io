@@ -41,6 +41,26 @@ a {
     text-decoration: none;
 }
 
+.button-link {
+    display: inline;
+}
+
+.button-link a {
+    background-color: 
+    rgb(212, 212, 212); 
+    text-align:center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;   
+    margin-left: 0px; 
+    display:inline;
+}
+
+.button-link a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
 .text_content {
     padding-right: 15px;
 }
@@ -69,4 +89,11 @@ a {
     display: inline-block;
     margin-left: 20px;
     width: 70%;
+}
+
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
 }

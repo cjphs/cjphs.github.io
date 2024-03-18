@@ -8,12 +8,11 @@ html {
     font-family: OpenSans;
     text-align: justify;
 
-    background-image: url("/assets/bg-ca.png");
 }
 
 body {
     background-color: rgb(241, 241, 241);
-    color: rgb(5, 0, 0);
+    color: rgb(0, 0, 0);
     
     margin-top: 50px;
 
